@@ -23,3 +23,7 @@ type SignedNumber interface {
 type Number interface {
 	SignedNumber | UnsignedInteger
 }
+
+type Sortable interface {
+	Number | ~string
+}
